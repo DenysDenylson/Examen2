@@ -1,0 +1,23 @@
+<h1>VER PROBLEMAS</h1>
+TERMOSTATO::<%=  @thermostat_id %>
+<br>
+
+<table border="2">
+	<thead>
+		<tr>
+			<th>descripcion</th>
+			<th>status</th>
+			<th>resolucion</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<% @problemas.each do |problema| %>
+				<td><%= problema.description %></td><br>
+				<td><%= problema.status %></td><br>
+				<td><%= problema.resolution %></td><br>
+			<%end%>
+			
+		</tr>
+	</tbody>
+</table>

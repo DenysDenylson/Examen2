@@ -1,0 +1,19 @@
+<h1>FORMULARIO</h1>
+<br>
+<h1><%= @thermostat_id.to_i %></h1>
+
+<form>
+	<label>THERMOSTAT_ID::</label>
+	<input type="text" value="<%= @thermostat_id.to_i %>" disabled="disabled">
+	<br>
+	<label>descripcion::</label>
+	<textarea name="comentarios" rows="10" cols="40" required="required"></textarea><br>
+	<label>status</label>
+	<input type="text" disabled="disabled" value=""><br>
+	<label>resolucion::</label>
+	<textarea name="resolution" rows="10" cols="40" required="required" disabled="disabled">Escribe aquí tus resolucion</textarea><br>
+
+	<input type="submit" name="" value="save">
+	<a href="" title=""></a>
+	
+</form>

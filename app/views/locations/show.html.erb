@@ -27,6 +27,8 @@
         <th></th>
         <th></th>
         <th></th>
+        <th>REPORTES</th>
+        <th>VER PROBLEMAS</th>
       </tr>
     </thead>
 
@@ -50,6 +52,8 @@
           <td><a href="<%= edit_thermostat_path(thermostat) %>" class="btn btn-default">Edit</a></td>
           <td><a href="/thermostats/destroy/<%= thermostat.id %>" class="btn btn-danger">Delete</a></td>
           <td><a href="<%= report_history_path(thermostat.id) %> " class="btn btn-primary active"> Show History Thermostat</a></td>
+          <td><a href="/issues/new/<%= thermostat.id %>" class="btn btn-danger" >Reportar problema</a></td>    
+          <td><a href="/issues/ver_problemas/<%= thermostat.id %>" class="btn btn-danger" >VER PROBLEMAS</a></td>    
           
           <% end %>
           <% end %>

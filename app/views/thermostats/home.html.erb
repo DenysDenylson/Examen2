@@ -16,6 +16,8 @@
         <th></th>
         <th></th>
         <th></th>
+      
+
       </tr>
     </thead>
 
@@ -32,7 +34,8 @@
               <td><a href="/thermostats/<%= thermostat.id %>" class="btn btn-default">Show</a></td>
               <td><a href="<%= edit_thermostat_path(thermostat) %>" class="btn btn-default">Edit</a></td>
               <td><a href="/thermostats/destroy/<%= thermostat.id %>" class="btn btn-danger">Delete</a></td>
-              <td><a href="<%= home_new_schedule_path(thermostat) %> " class="btn btn-success active"> Alarm Settings </a></td>          
+              <td><a href="<%= home_new_schedule_path(thermostat) %> " class="btn btn-success active"> Alarm Settings </a></td>
+
             <% end %>
           <% end %>
 

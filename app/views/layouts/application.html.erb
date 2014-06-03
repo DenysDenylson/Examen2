@@ -68,6 +68,14 @@
           <h1>ALERTS</h1>
 
           <p><%= current_user.email %></p>
+          <% @user=User.limit(2) %>
+          <% @user=User.where( :email => current_user.email) %>
+          <%= @user[0].email %>
+
+          
+
+          
+
           <% @thermostats = Thermostat.all %>
           <% @schedules = Schedule.all %>
           <p>

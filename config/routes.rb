@@ -1,4 +1,6 @@
 ThermMonitor::Application.routes.draw do
+  resources :issues
+
   resources :alarms
 
   resources :schedules
@@ -34,6 +36,9 @@ ThermMonitor::Application.routes.draw do
    get '/thermostats/destroy/:id' => 'thermostats#destroy'
    get '/thermostats/add/:id' => 'thermostats#add'
    get '/thermostats/sub/:id' => 'thermostats#sub'
+   get '/issues/formulario/:id' => 'issues#formulario'
+   get '/issues/new/:id' => 'issues#new'
+   get '/issues/ver_problemas/:id' => 'issues#ver_problemas'
 
    get '/history_thermostats' => 'thermostats#history', :as => 'show_history'
    get '/home/:id/schedules' => 'schedules#index', :as => 'home_new_schedule'
